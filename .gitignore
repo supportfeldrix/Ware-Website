@@ -1,0 +1,14 @@
+# OS / editor cruft
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+*.swp
+.vscode/
+
+# Helper / processing scripts (not needed for the deployed site)
+assets/templates/_process_*.py
+assets/**/_*.ps1
+
+# Logs
+*.log
