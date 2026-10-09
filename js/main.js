@@ -153,7 +153,7 @@
   // Formspree endpoint for the WARE quote form.
   // Submissions are delivered to info@wareapparel.co.za (configured in the
   // Formspree dashboard for this form, not here).
-  var FORMSPREE_URL = "https://formspree.io/f/xbgdobbd";
+  var FORMSPREE_URL = "https://formspree.io/f/xgaokbwd";
 
   var lastFocused = null;
 
