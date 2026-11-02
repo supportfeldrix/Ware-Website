@@ -142,6 +142,10 @@ h1, h2, h3 { font-family: var(--font-head); margin: 0; line-height: 1.02; }
 .nav__cta { margin-left: 8px; }
 .nav__cta-mobile { display: none; }
 
+/* Partner logo (SSC Active) — sits to the right of the Request Quote CTA */
+.nav__partner { display: inline-flex; align-items: center; margin-left: 16px; padding-left: 16px; border-left: 1px solid var(--line); }
+.nav__partner-logo { height: 34px; width: auto; object-fit: contain; display: block; }
+
 /* Hamburger */
 .nav__toggle {
   display: none; margin-left: auto; width: 44px; height: 44px;
@@ -314,7 +318,10 @@ h1, h2, h3 { font-family: var(--font-head); margin: 0; line-height: 1.02; }
 /* ----------------------------- Footer ----------------------------- */
 .footer { background: var(--bg); border-top: 1px solid var(--line); padding: 56px 0 0; }
 .footer__grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr 1.2fr 1.1fr; gap: 32px; }
-.footer__logo { height: 46px; width: auto; margin-bottom: 16px; }
+.footer__logos { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
+.footer__logo { height: 46px; width: auto; }
+.footer__logos .footer__logo { margin-bottom: 0; }
+.footer__logo--partner { height: 38px; padding-left: 16px; border-left: 1px solid var(--line); }
 .footer__about { color: var(--muted); font-size: 0.86rem; max-width: 240px; }
 .footer__social { display: flex; gap: 12px; margin-top: 18px; }
 .footer__social-link {
@@ -349,6 +356,7 @@ h1, h2, h3 { font-family: var(--font-head); margin: 0; line-height: 1.02; }
   /* Mobile nav */
   .nav__toggle { display: flex; }
   .nav__cta { display: none; }
+  .nav__partner { display: none; }
   .nav__menu {
     position: fixed; inset: var(--nav-h) 0 auto 0; margin: 0;
     display: block; flex: none;
